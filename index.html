@@ -1,1 +1,87 @@
 # chrisla
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Romantic Destinations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #333333;
+    }
+    
+    #globe {
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    
+    #destination {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+    
+    #button-container {
+      margin-top: 20px;
+    }
+    
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    var destinations = [
+      "Bora Bora, French Polynesia",
+      "Santorini, Greece",
+      "Maldives",
+      "Bali, Indonesia",
+      "Maui, Hawaii",
+      "Venice, Italy",
+      "Paris, France",
+      "Kyoto, Japan",
+      "St. Lucia",
+      "Amalfi Coast, Italy",
+      "Fiji",
+      "Seychelles",
+      "Phuket, Thailand",
+      "Buenos Aires, Argentina",
+      "Tahiti, French Polynesia",
+      "Cape Town, South Africa",
+      "Sedona, Arizona",
+      "Santorini, Greece",
+      "Dubrovnik, Croatia",
+      "Mauritius"
+    ];
+    
+    function getRandomDestination() {
+      var randomIndex = Math.floor(Math.random() * destinations.length);
+      document.getElementById("destination").textContent = destinations[randomIndex];
+    }
+  </script>
+</head>
+<body>
+  <h1>Random Romantic Destination</h1>
+  <img id="globe" src="globe.jpeg" alt="Globe Image">
+  <div id="destination"></div>
+  <div id="button-container">
+    <button onclick="getRandomDestination()">Random Destination</button>
+  </div>
+</body>
+   <div>
+      <a class="page-button" href="larissa.html">History of Us</a>
+      <a class="page-button" href="vactation.html">Trips for us</a>
+      <a class="page-button" href="countdown.html">Countdown</a>                                       
+      <a class="page-button" href="Things.html">Things I love about you Larissa</a>
+    </div>
+</html>
